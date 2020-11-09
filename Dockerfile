@@ -8,7 +8,7 @@ LABEL maintainer="adsoft@live.com.mx"
 VOLUME /tmp
 
 # Make port 8080 available to the world outside this container
-EXPOSE 5022
+EXPOSE 5021
 
 # The application's jar file
 ARG JAR_FILE=target/postgres-demo-0.0.1-SNAPSHOT.jar
@@ -23,4 +23,4 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/ng5-api.ja
 # sudo docker build -t <dockerhub-user>/ng5-api .
 
 # docker run
-# sudo docker run --name <linuxuser>-api -p 8xxx:8080 -d <dockerhub-user>/ng5-api  
+# sudo docker run --name <linuxuser>-api -p 5022:8080 -d <monteshgu>/postgres-demo-api  
